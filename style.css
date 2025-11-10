@@ -21,6 +21,8 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -1365,6 +1367,19 @@ body {
   padding: 2rem;
 }
 
+/* Prevent Bootstrap from adding right padding shift on mobile when modal opens */
+body.modal-open {
+  padding-right: 0 !important;
+}
+
+/* Avoid iOS auto-zoom when focusing inputs (keep at least 16px) */
+@media (max-width: 576px) {
+  input, select, textarea,
+  .form-control, .form-select {
+    font-size: 16px !important;
+  }
+}
+
 .form-select {
   border: 2px solid rgba(26, 35, 50, 0.1);
   border-radius: 10px;
@@ -1476,8 +1491,8 @@ body {
   }
 
   .sidebar {
-    width: 300px;
-    right: -300px;
+    width: min(92vw, var(--sidebar-max));
+    right: calc(-1 * min(92vw, var(--sidebar-max)));
   }
 
   .sidebar-header {
@@ -1529,8 +1544,8 @@ body {
   }
 
   .sidebar {
-    width: 280px;
-    right: -280px;
+    width: min(92vw, var(--sidebar-max));
+    right: calc(-1 * min(92vw, var(--sidebar-max)));
   }
 
   .btn-quote {
