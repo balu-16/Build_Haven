@@ -238,8 +238,9 @@ body {
   position: sticky;
   top: 0;
   background: linear-gradient(180deg, var(--navy-blue) 0%, var(--navy-blue-dark) 100%);
-  /* add safe area padding for devices with display cutouts */
-  padding-right: calc(1.5rem + env(safe-area-inset-right, 0px));
+  /* reserve space at the right for the close button */
+  padding-right: calc(4rem + env(safe-area-inset-right, 0px));
+  position: sticky;
 }
 
 .sidebar-header h5 {
@@ -264,9 +265,11 @@ body {
   border-radius: 8px;
   transition: all 0.3s ease;
   flex-shrink: 0;
-  /* ensure it stays aligned to the right within the header */
-  position: relative;
-  margin-left: auto;
+  /* pin inside header and avoid clipping on any screen */
+  position: absolute;
+  top: 50%;
+  right: calc(1rem + env(safe-area-inset-right, 0px));
+  transform: translateY(-50%);
   z-index: 10;
 }
 
