@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const sidebar = document.getElementById('sidebar');
   const sidebarToggle = document.getElementById('sidebarToggle');
   const sidebarClose = document.getElementById('sidebarClose');
-  const sidebarCloseFooter = document.getElementById('sidebarCloseFooter');
   const sidebarOverlay = document.getElementById('sidebarOverlay');
 
   function openSidebar() {
@@ -51,10 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (sidebarClose) {
     sidebarClose.addEventListener('click', closeSidebar);
-  }
-
-  if (sidebarCloseFooter) {
-    sidebarCloseFooter.addEventListener('click', closeSidebar);
   }
 
   if (sidebarOverlay) {
