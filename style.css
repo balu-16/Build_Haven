@@ -1371,6 +1371,16 @@ body {
 body.modal-open {
   padding-right: 0 !important;
 }
+.modal-open .fixed-top,
+.modal-open .sticky-top,
+.modal-open .navbar {
+  padding-right: 0 !important;
+}
+
+:root {
+  /* neutralize Bootstrap scrollbar width compensation */
+  --bs-scrollbar-width: 0px;
+}
 
 /* Avoid iOS auto-zoom when focusing inputs (keep at least 16px) */
 @media (max-width: 576px) {
