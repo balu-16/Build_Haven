@@ -1354,3 +1354,158 @@ body {
     font-size: 1rem;
   }
 }
+
+/* =============================
+   Responsive Enhancements (mobile-first overrides)
+   - Fluid typography using clamp
+   - Make background images scroll on touch devices (fixes mobile rendering)
+   - Responsive widths/heights for carousel, gallery and sidebar
+   - Make images fully fluid
+   - Minor spacing reductions for very small screens
+   ============================= */
+
+:root {
+  /* ensure a single place to control sidebar max width */
+  --sidebar-max: 380px;
+}
+
+/* Fluid typography */
+.hero-title {
+  font-size: clamp(1.8rem, 4vw + 0.8rem, 3.5rem);
+}
+
+.section-title {
+  font-size: clamp(1.4rem, 2.2vw + 0.6rem, 2.5rem);
+}
+
+.feature-card h4,
+.why-card h5,
+.process-card h4 {
+  font-size: clamp(1rem, 1.6vw + 0.6rem, 1.5rem);
+}
+
+/* Make background-attachment behave on mobile (fixed hurts performance and looks broken on iOS/Android) */
+@media (max-width: 1024px), (hover: none) {
+  .hero-section,
+  .parallax-section,
+  .parallax-section-2 {
+    background-attachment: scroll !important;
+  }
+}
+
+/* Carousel: use aspect-ratio rather than fixed pixel heights */
+.carousel-image {
+  height: auto !important;
+  aspect-ratio: 16 / 9;
+  min-height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+/* Gallery images: make them responsive and keep object-fit */
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  max-height: 420px;
+  display: block;
+}
+
+/* Make all images fluid by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Sidebar: use viewport width on small screens to avoid overflow */
+.sidebar {
+  width: min(92vw, var(--sidebar-max));
+  right: calc(-1 * min(92vw, var(--sidebar-max))); /* keep same toggle logic */
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+/* Navbar wrapping on very small screens */
+@media (max-width: 520px) {
+  .navbar .container {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.15rem;
+  }
+
+  .navbar .d-flex {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .btn-quote {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+/* Reduce oversized decorative numbers on very small screens */
+@media (max-width: 576px) {
+  .process-number {
+    font-size: 2.8rem;
+    top: -10px;
+    right: 12px;
+  }
+
+  .feature-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .process-icon {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+/* Back to top smaller on tiny screens */
+@media (max-width: 420px) {
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    bottom: 14px;
+    right: 14px;
+    font-size: 1.1rem;
+  }
+
+  .hero-section {
+    padding: 4.5rem 0 2rem;
+  }
+
+  .section-padding {
+    padding: 2rem 0;
+  }
+}
+
+/* Minor accessibility/touch improvements */
+.btn-menu,
+.btn-quote,
+.btn-pricing,
+.btn-hero {
+  touch-action: manipulation;
+}
+
+/* Ensure form controls remain usable on small screens */
+@media (max-width: 576px) {
+  .contact-form .form-control,
+  .form-select {
+    font-size: 0.95rem;
+    padding: 0.7rem 0.9rem;
+  }
+}
