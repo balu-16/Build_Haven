@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Build Haven - Premium Custom Construction</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-text">Build Haven</span>
+      </a>
+      
+      <!-- Desktop Navigation Links -->
+      <ul class="navbar-nav-custom">
+        <li class="nav-item-custom"><a class="nav-link-custom" href="#home">Home</a></li>
+        <li class="nav-item-custom"><a class="nav-link-custom" href="#about">About Us</a></li>
+        <li class="nav-item-custom"><a class="nav-link-custom" href="#why-us">Why Us</a></li>
+        <li class="nav-item-custom"><a class="nav-link-custom" href="#pricing">Pricing</a></li>
+        <li class="nav-item-custom"><a class="nav-link-custom" href="#planning">Planning</a></li>
+      </ul>
+
+      <div class="d-flex align-items-center gap-3">
+        <button class="btn btn-quote" data-bs-toggle="modal" data-bs-target="#quoteModal">
+          Request a Quote
+        </button>
+        <button class="btn btn-menu" id="sidebarToggle">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Right Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h5>Menu</h5>
+      <button class="btn-close-sidebar" id="sidebarClose">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="sidebar-body">
+      <ul class="sidebar-nav">
+        <li class="sidebar-item"><a class="sidebar-link" href="#home">Home</a></li>
+        <li class="sidebar-item"><a class="sidebar-link" href="#about">About Us</a></li>
+        <li class="sidebar-item"><a class="sidebar-link" href="#why-us">Why Us</a></li>
+        <li class="sidebar-item"><a class="sidebar-link" href="#pricing">Pricing</a></li>
+        <li class="sidebar-item"><a class="sidebar-link" href="#planning">Planning</a></li>
+        <li class="sidebar-item"><a class="sidebar-link" href="#design">Design</a></li>
+        <li class="sidebar-item"><a class="sidebar-link" href="#quality">Quality</a></li>
+        <li class="sidebar-item"><a class="sidebar-link" href="#policy">Our Policy</a></li>
+        <li class="sidebar-item"><a class="sidebar-link" href="#gallery">Gallery</a></li>
+        <li class="sidebar-item"><a class="sidebar-link" href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Sidebar Overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-10">
+          <h1 class="hero-title" data-aos="fade-up">WELCOME TO BUILD HAVEN</h1>
+          <p class="hero-text" data-aos="fade-up" data-aos-delay="100">
+            Build Haven is a custom design construction company with a team of professionally qualified experts who
+            bring decades of experience and precision to every project. We believe that your home should reflect your
+            personality, which is why we focus on understanding your lifestyle and needs to deliver tailor-made results.
+            From design consultation to final construction, our goal is to make your home-building journey simpler,
+            transparent, and stress-free.
+          </p>
+          <a href="#about" class="btn btn-hero" data-aos="fade-up" data-aos-delay="200">
+            Explore More <i class="bi bi-arrow-down ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="section-padding bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="section-title" data-aos="fade-up">About Build Haven</h2>
+          <div class="title-divider"></div>
+          <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+            At Build Haven, we specialize in creating spaces that combine functionality, innovation, and timeless
+            design. Founded by industry veterans, our company has grown on the values of integrity, excellence, and
+            client satisfaction. Whether it's a luxury villa, modern apartment, or commercial fit-out, we treat each
+            project with equal passion and attention to detail.
+          </p>
+          <p class="section-description" data-aos="fade-up" data-aos-delay="150">
+            Our in-house team of architects, designers, and engineers collaborates closely with clients to deliver
+            results that exceed expectations — every time.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <h4>Experienced Team</h4>
+            <p>Our professionals bring decades of combined expertise in construction, design, and project management.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="bi bi-heart-fill"></i>
+            </div>
+            <h4>Client-First Approach</h4>
+            <p>Your vision drives our mission. We listen, understand, and deliver solutions tailored to your unique
+              needs.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="bi bi-tree-fill"></i>
+            </div>
+            <h4>Sustainable Materials</h4>
+            <p>We prioritize eco-friendly materials and sustainable building practices for a greener tomorrow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us Section -->
+  <section id="why-us" class="section-padding parallax-section">
+    <div class="parallax-overlay"></div>
+    <div class="container position-relative">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center text-white">
+          <h2 class="section-title text-white" data-aos="fade-up">Why Choose Build Haven</h2>
+          <div class="title-divider title-divider-light"></div>
+          <p class="section-description text-white" data-aos="fade-up" data-aos-delay="100">
+            Choosing Build Haven means working with professionals who value your trust and investment. Our reputation is
+            built on quality workmanship, timely delivery, and transparent communication.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="why-card">
+            <div class="why-icon">
+              <i class="bi bi-award-fill"></i>
+            </div>
+            <h5>Over 20 Years of Experience</h5>
+            <p>Two decades of excellence in the construction industry.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="why-card">
+            <div class="why-icon">
+              <i class="bi bi-briefcase-fill"></i>
+            </div>
+            <h5>End-to-End Management</h5>
+            <p>Complete project oversight from concept to completion.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="why-card">
+            <div class="why-icon">
+              <i class="bi bi-cash-coin"></i>
+            </div>
+            <h5>Transparent Pricing</h5>
+            <p>Fixed costs with no hidden fees or surprises.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+          <div class="why-card">
+            <div class="why-icon">
+              <i class="bi bi-shield-fill-check"></i>
+            </div>
+            <h5>Licensed & Insured</h5>
+            <p>QBCC License #15104341 for your peace of mind.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="why-card">
+            <div class="why-icon">
+              <i class="bi bi-headset"></i>
+            </div>
+            <h5>Dedicated Support</h5>
+            <p>Comprehensive after-sales service and warranty.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="350">
+          <div class="why-card">
+            <div class="why-icon">
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h5>Premium Quality</h5>
+            <p>Uncompromising standards in every detail.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="section-padding bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="section-title" data-aos="fade-up">Pricing & Value</h2>
+          <div class="title-divider"></div>
+          <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+            We believe in honest, upfront pricing that aligns with your expectations. Every project is carefully
+            assessed to ensure the best value for your investment. We tailor each quote based on design complexity,
+            materials, and project scale — no hidden costs, no surprises.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Basic</h3>
+              <div class="pricing-badge">Entry Level</div>
+            </div>
+            <div class="pricing-body">
+              <ul class="pricing-features">
+                <li><i class="bi bi-check-circle-fill"></i> Standard home packages</li>
+                <li><i class="bi bi-check-circle-fill"></i> Quality materials</li>
+                <li><i class="bi bi-check-circle-fill"></i> Essential inclusions</li>
+                <li><i class="bi bi-check-circle-fill"></i> Professional team</li>
+                <li><i class="bi bi-check-circle-fill"></i> Warranty included</li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <button class="btn btn-pricing" data-bs-toggle="modal" data-bs-target="#quoteModal">Get Quote</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="pricing-card pricing-featured">
+            <div class="featured-badge">Most Popular</div>
+            <div class="pricing-header">
+              <h3>Premium</h3>
+              <div class="pricing-badge">Mid-Range</div>
+            </div>
+            <div class="pricing-body">
+              <ul class="pricing-features">
+                <li><i class="bi bi-check-circle-fill"></i> Contemporary designs</li>
+                <li><i class="bi bi-check-circle-fill"></i> Premium materials</li>
+                <li><i class="bi bi-check-circle-fill"></i> Enhanced inclusions</li>
+                <li><i class="bi bi-check-circle-fill"></i> Design consultation</li>
+                <li><i class="bi bi-check-circle-fill"></i> Extended warranty</li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <button class="btn btn-pricing" data-bs-toggle="modal" data-bs-target="#quoteModal">Get Quote</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Custom</h3>
+              <div class="pricing-badge">Luxury</div>
+            </div>
+            <div class="pricing-body">
+              <ul class="pricing-features">
+                <li><i class="bi bi-check-circle-fill"></i> Fully personalized builds</li>
+                <li><i class="bi bi-check-circle-fill"></i> Luxury inclusions</li>
+                <li><i class="bi bi-check-circle-fill"></i> Premium finishes</li>
+                <li><i class="bi bi-check-circle-fill"></i> Dedicated architect</li>
+                <li><i class="bi bi-check-circle-fill"></i> Lifetime support</li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <button class="btn btn-pricing" data-bs-toggle="modal" data-bs-target="#quoteModal">Get Quote</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <p class="pricing-note" data-aos="fade-up">
+            <i class="bi bi-info-circle"></i> Contact our sales staff for a detailed quote tailored to your specific
+            requirements.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planning Section -->
+  <section id="planning" class="section-padding">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="section-title" data-aos="fade-up">Planning Your Dream Home</h2>
+          <div class="title-divider"></div>
+          <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+            Our planning process starts with you. We guide clients through each stage — from concept sketches and
+            feasibility studies to approvals and scheduling. Every project includes detailed planning meetings to ensure
+            designs meet your lifestyle, budget, and long-term goals.
+          </p>
+          <p class="section-description" data-aos="fade-up" data-aos-delay="150">
+            We leverage cutting-edge software to visualize your future home before construction even begins. This helps
+            you make confident design decisions early.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+          <div class="process-card">
+            <div class="process-number">01</div>
+            <div class="process-icon">
+              <i class="bi bi-chat-dots-fill"></i>
+            </div>
+            <h4>Consult</h4>
+            <p>Initial consultation to understand your vision, requirements, and budget. We listen to your ideas and
+              provide expert guidance.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="process-card">
+            <div class="process-number">02</div>
+            <div class="process-icon">
+              <i class="bi bi-pencil-square"></i>
+            </div>
+            <h4>Design</h4>
+            <p>Collaborative design phase where architects create detailed plans, 3D visualizations, and technical
+              drawings for approval.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+          <div class="process-card">
+            <div class="process-number">03</div>
+            <div class="process-icon">
+              <i class="bi bi-hammer"></i>
+            </div>
+            <h4>Execute</h4>
+            <p>Professional construction with regular updates, quality inspections, and on-time delivery of your dream
+              home.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Section -->
+  <section id="design" class="section-padding bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="section-title" data-aos="fade-up">Our Design Philosophy</h2>
+          <div class="title-divider"></div>
+          <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+            Build Haven blends creativity with technical excellence. Our architects focus on creating spaces that are
+            both visually captivating and structurally sound.
+          </p>
+          <p class="section-description" data-aos="fade-up" data-aos-delay="150">
+            We emphasize sustainable design, energy efficiency, and modern aesthetics. Whether you prefer minimalist
+            interiors or grand architectural statements, our team ensures every detail reflects your taste.
+          </p>
+        </div>
+      </div>
+
+      <!-- Carousel -->
+      <div class="row">
+        <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+          <div id="designCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#designCarousel" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#designCarousel" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#designCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-image"
+                  style="background-image: url('https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+                  <div class="carousel-caption">
+                    <h5>Modern Architecture</h5>
+                    <p>Contemporary designs that stand the test of time</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-image"
+                  style="background-image: url('https://images.pexels.com/photos/1643384/pexels-photo-1643384.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+                  <div class="carousel-caption">
+                    <h5>Elegant Interiors</h5>
+                    <p>Thoughtfully designed spaces for everyday living</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-image"
+                  style="background-image: url('https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+                  <div class="carousel-caption">
+                    <h5>Stunning Facades</h5>
+                    <p>Exteriors that make lasting impressions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#designCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#designCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality Section -->
+  <section id="quality" class="section-padding">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="section-title" data-aos="fade-up">Commitment to Quality</h2>
+          <div class="title-divider"></div>
+          <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+            Quality is at the heart of everything we do. From foundation to finishing, each stage of construction
+            undergoes rigorous inspection to maintain Build Haven's high standards.
+          </p>
+          <p class="section-description" data-aos="fade-up" data-aos-delay="150">
+            We partner with trusted suppliers and use premium materials that stand the test of time. Our workmanship
+            warranty provides peace of mind long after project completion.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="quality-metric">
+            <h5>Material Quality</h5>
+            <div class="progress">
+              <div class="progress-bar" style="width: 100%">100%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="quality-metric">
+            <h5>Customer Satisfaction</h5>
+            <div class="progress">
+              <div class="progress-bar" style="width: 98%">98%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="quality-metric">
+            <h5>On-Time Delivery</h5>
+            <div class="progress">
+              <div class="progress-bar" style="width: 95%">95%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Policy Section -->
+  <section id="policy" class="section-padding parallax-section parallax-section-2">
+    <div class="parallax-overlay"></div>
+    <div class="container position-relative">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center text-white">
+          <h2 class="section-title text-white" data-aos="fade-up">Our Policy & Promise</h2>
+          <div class="title-divider title-divider-light"></div>
+          <p class="section-description text-white" data-aos="fade-up" data-aos-delay="100">
+            Build Haven operates under a clear code of ethics focused on transparency, safety, and customer
+            satisfaction.
+          </p>
+          <p class="section-description text-white" data-aos="fade-up" data-aos-delay="150">
+            We ensure every project complies with Australian building regulations and environmental guidelines. We're
+            committed to maintaining open communication, honest pricing, and a zero-compromise policy on quality.
+          </p>
+          <p class="section-description text-white policy-highlight" data-aos="fade-up" data-aos-delay="200">
+            We believe your trust is our greatest asset — and we work every day to earn it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section-padding bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="section-title" data-aos="fade-up">Our Gallery</h2>
+          <div class="title-divider"></div>
+          <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+            Explore our portfolio of completed projects showcasing exceptional craftsmanship and design excellence.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
+            data-image="https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            data-caption="Luxury Villa, Brisbane">
+            <img
+              src="https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Luxury Villa">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <h5>Luxury Villa</h5>
+                <p>Brisbane</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
+            data-image="https://images.pexels.com/photos/2351649/pexels-photo-2351649.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            data-caption="Modern Interior, Gold Coast">
+            <img
+              src="https://images.pexels.com/photos/2351649/pexels-photo-2351649.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Modern Interior">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <h5>Modern Interior</h5>
+                <p>Gold Coast</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
+            data-image="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            data-caption="Coastal Retreat, Sunshine Coast">
+            <img
+              src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Coastal Retreat">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <h5>Coastal Retreat</h5>
+                <p>Sunshine Coast</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="250">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
+            data-image="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            data-caption="Contemporary Home, Brisbane">
+            <img
+              src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Contemporary Home">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <h5>Contemporary Home</h5>
+                <p>Brisbane</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
+            data-image="https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            data-caption="Urban Architecture, Brisbane">
+            <img
+              src="https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Urban Architecture">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <h5>Urban Architecture</h5>
+                <p>Brisbane</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="350">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
+            data-image="https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            data-caption="Elegant Design, Gold Coast">
+            <img
+              src="https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Elegant Design">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <h5>Elegant Design</h5>
+                <p>Gold Coast</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
+          <div class="title-divider"></div>
+          <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+            We are available via email or telephone. You can also use a quick contact form below or visit our office
+            personally with a prior appointment.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="contact-info-box">
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div>
+                <h5>Phone</h5>
+                <p><a href="tel:0416852500">0416 852 500</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <h5>Email</h5>
+                <p><a href="mailto:sales@buildhaven.com.au">sales@buildhaven.com.au</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="bi bi-clock-fill"></i>
+              </div>
+              <div>
+                <h5>Business Hours</h5>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: By Appointment<br>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left">
+          <form class="contact-form" id="contactForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+              </div>
+              <div class="col-12">
+                <input type="tel" class="form-control" placeholder="Your Phone" required>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary-custom">
+                  Send Message <i class="bi bi-send ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5 class="footer-heading">Quick Menu</h5>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#planning">Planning</a></li>
+            <li><a href="#design">Design</a></li>
+            <li><a href="#quality">Quality</a></li>
+            <li><a href="#policy">Our Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h5 class="footer-heading">Information</h5>
+          <ul class="footer-info">
+            <li>
+              <i class="bi bi-telephone-fill"></i>
+              <a href="tel:0416852500">0416 852 500</a>
+            </li>
+            <li>
+              <i class="bi bi-envelope-fill"></i>
+              <a href="mailto:sales@buildhaven.com.au">sales@buildhaven.com.au</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h5 class="footer-heading">Follow Us</h5>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="copyright">
+              &copy; Copyright 2020 Build Haven | All Rights Reserved. Designed by Crazy Domains.
+            </p>
+            <p class="disclaimer">
+              Photographs and images used as guide purpose only. Furniture, landscaping, pools, fencing etc are not
+              offered by Build Haven.<br>
+              For a detailed home pricing please contact the Sales staff. All rights reserved. Build Haven Pty Ltd. QBCC
+              License #15104341. ABN: 39628212019
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Quote Modal -->
+  <div class="modal fade" id="quoteModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Request a Quote</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="quoteForm">
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <input type="tel" class="form-control" placeholder="Your Phone" required>
+            </div>
+            <div class="mb-3">
+              <select class="form-select" required>
+                <option value="">Select Package Type</option>
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+                <option value="custom">Custom</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Tell us about your project" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary-custom w-100">Submit Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Modal -->
+  <div class="modal fade" id="galleryModal" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="galleryModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0">
+          <img id="galleryModalImage" src="" alt="" class="img-fluid w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Custom JS -->
+  <script src="main.js"></script>
+</body>
+
+</html>
